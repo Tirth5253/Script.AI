@@ -3,7 +3,7 @@
 
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { ArrowBigRight, Code, ImageIcon, MessageSquare, Music, VideoIcon } from "lucide-react";
+import { ArrowBigRight, Code, ImageIcon, MessageSquare, Music, Newspaper, VideoIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const tools=[
@@ -51,6 +51,13 @@ const tools=[
         
        
     
+    },
+    {
+        label:"Code Generation",
+        icon: Newspaper,
+        color:"text-red-700",
+        bgcolor:"bg-red-700/10",
+        href:"https://script-ai-summ.vercel.app/",
     },
 ]
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from "@/lib/utils";
-import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
+import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, NewspaperIcon, Settings, VideoIcon } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,6 +49,12 @@ const routes=[{
     href:"/code",
     color:"text-cyan-200",
 
+},
+{
+    label:"Article Summerizer",
+    icon: NewspaperIcon,
+    href:"https://script-ai-summ.vercel.app/",
+    color:"text-red-700",
 },
 {
     label:"Settings", 
