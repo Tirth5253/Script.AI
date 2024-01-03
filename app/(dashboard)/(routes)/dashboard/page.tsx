@@ -53,7 +53,7 @@ const tools=[
     
     },
     {
-        label:"Code Generation",
+        label:"Article Summerizer",
         icon: Newspaper,
         color:"text-red-700",
         bgcolor:"bg-red-700/10",
