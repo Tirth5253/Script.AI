@@ -23,18 +23,9 @@ const tools=[
       
     
     },
+   
     {
-        label:"Video Generation",
-        icon: VideoIcon,
-        color:"text-orange-700",
-        bgcolor:"bg-orange-700/10",
-        href:"/video",
-        
-       
-    
-    },
-    {
-        label:"Music Generation",
+        label:"Audio Generation",
         icon: Music,
         color:"text-lime-300",
         bgcolor:"bg-lime-300/10",
