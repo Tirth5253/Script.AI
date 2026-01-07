@@ -1,13 +1,14 @@
 import { auth, currentUser } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 import prismadb from "@/lib/prismadb";
 import { stripe } from "@/lib/stripe";
 import { absoluteUrl } from "@/lib/utils";
 
-const settingsUrl = absoluteUrl("/settings");
-
-export async function GET() {
+export async function POST() {
   try {
     const settingsUrl = absoluteUrl("/settings");
 
@@ -57,7 +58,7 @@ export async function GET() {
 
     return NextResponse.json({ url: stripeSession.url });
   } catch (error) {
-    console.log("[STRIPE_ERROR]", error);
+    console.error("[STRIPE_ERROR]", error);
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
