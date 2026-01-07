@@ -25,18 +25,18 @@ export const ProModal = () => {
   const proModal = useProModal();
   const [loading, setLoading] = useState(false);
 
-  const onSubscribe = async () => {
-    try {
-      setLoading(true);
-      const response = await axios.post("/api/stripe");
+  // const onSubscribe = async () => {
+  //   try {
+  //     setLoading(true);
+  //     const response = await axios.post("/api/stripe");
 
-      window.location.href = response.data.url;
-    } catch (error) {
-      toast.error("Feature Coming Soon...");
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     window.location.href = response.data.url;
+  //   } catch (error) {
+  //     toast.error("Feature Coming Soon...");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <Dialog open={proModal.isOpen} onOpenChange={proModal.onClose}>

@@ -11,17 +11,15 @@ export const SubscriptionButton = ({ isPro = true }: { isPro: boolean }) => {
   const [loading, setLoading] = useState(false);
 
   const onClick = async () => {
-    try {
-      setLoading(true);
-
-      const response = await axios.post("/api/stripe");
-
-      window.location.href = response.data.url;
-    } catch (error) {
-      toast.error("Feature Coming Soon...");
-    } finally {
-      setLoading(false);
-    }
+    // try {
+    //   setLoading(true);
+    //   const response = await axios.post("/api/stripe");
+    //   window.location.href = response.data.url;
+    // } catch (error) {
+    //   toast.error("Feature Coming Soon...");
+    // } finally {
+    //   setLoading(false);
+    // }
   };
 
   return (
